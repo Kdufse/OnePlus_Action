@@ -1,0 +1,8 @@
+name: Build OnePlus Kernel(SukiSU-Ultra) - Template
+on:
+  workflow_dispatch:
+    
+jobs:
+  build:
+    name: Sample Workflow is running
+      echo "hello!"
