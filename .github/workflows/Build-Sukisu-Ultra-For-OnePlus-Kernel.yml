@@ -1179,7 +1179,7 @@ jobs:
 
       - name: Make AnyKernel3
         run: |
-          git clone https://github.com/Numbersf/AnyKernel3 --depth=1
+          git clone https://github.com/Kdufse/AnyKernel3 --depth=1
           rm -rf ./AnyKernel3/.git
           mkdir -p kernel_workspace/kernel_platform/out/Final-Image-Find/
           image_path=""
@@ -1201,7 +1201,7 @@ jobs:
           fi
           if [ -f "$image_path" ]; then
             echo "✅ Image file finally located at: $image_path"
-            cp "$image_path" ./AnyKernel3/Image
+            cp "$image_path" ./AnyKernel3/Image/Image
             cp "$image_path" kernel_workspace/kernel_platform/out/Final-Image-Find/Image
           fi
 
