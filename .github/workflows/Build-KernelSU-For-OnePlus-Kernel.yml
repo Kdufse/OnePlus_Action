@@ -1,4 +1,4 @@
-name: Build All OnePlus Kernels
+name: Build OnePlus Kernel(KernelSU)
 on:
   workflow_dispatch:
     inputs:
