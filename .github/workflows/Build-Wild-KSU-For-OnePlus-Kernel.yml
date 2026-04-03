@@ -1117,7 +1117,7 @@ jobs:
           fi
           if [ -f "$image_path" ]; then
             echo "✅ Image file finally located at: $image_path"
-            cp "$image_path" ./AnyKernel3/Image/Image
+            cp "$image_path" ./AnyKernel3/Image
             cp "$image_path" kernel_workspace/kernel_platform/out/Final-Image-Find/Image
           fi
 
@@ -1132,7 +1132,7 @@ jobs:
           ./patch_linux
           rm -f Image
           mv oImage Image
-          cp Image "${GITHUB_WORKSPACE}/AnyKernel3/Image/Image"
+          cp Image "${GITHUB_WORKSPACE}/AnyKernel3/Image"
 
       - name: Download Latest SUSFS Module from CI
         if: ${{ github.event.inputs.SUSFS_CI == 'CI' && github.event.inputs.SUSFS_META != '-1' }}
