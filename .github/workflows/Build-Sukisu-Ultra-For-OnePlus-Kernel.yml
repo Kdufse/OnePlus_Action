@@ -103,7 +103,7 @@ on:
         type: string
         description: "分支名(必填)/自定义版本标识(留空不修改)/回退分支提交哈希版本(留空不修改)"
         required: false
-        default: "builtin/Numbersf/"
+        default: ""
       ZRAM:
         type: string
         description: "ZRAM(0关闭1开启)/算法名/大小"
